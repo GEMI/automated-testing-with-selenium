@@ -11,7 +11,7 @@ async function searchTest(driver) {
 	driver.get('https://www.google.com');
 
 	var searchField = driver.wait(until.elementLocated(By.name('q')));
-	searchField.sendKeys('webdriver\n');
+	searchField.sendKeys('itmokykla\n');
 
 	await driver.findElements(By.name('btnK')).then(function(el) {
 		return el[1].click();
@@ -19,8 +19,7 @@ async function searchTest(driver) {
 
 	driver.sleep(2000).then(function () {
 		driver.getTitle().then(function (title) {
-			console.log(title);
-			if (title.includes('webdriver')) {
+			if (title.includes('itmokykla')) {
 				console.log('Test passed');
 			} else {
 				console.log('Test failed');
