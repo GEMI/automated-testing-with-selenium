@@ -1,0 +1,17 @@
+{
+  "name": "selenium-example",
+  "version": "1.0.0",
+  "description": "Selenium Example Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha first_test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "keywords": [],
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  }
+}
